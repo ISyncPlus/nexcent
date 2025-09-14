@@ -7,7 +7,7 @@ type ButtonProps = {
     } & React.ComponentPropsWithRef<'button'>
 
 export default function Button({ children, className, variant, ...rest }: ButtonProps) {
-    const base:string = 'font-bold font-montserrat px-8 lg:px-8 py-4 rounded-full shadow-lg hover:cursor-pointer active:scale-95 hover:scale-95 transition-all duration-300 ';
+    const base:string = 'font-bold font-montserrat px-8 lg:px-8 py-4 rounded-xl shadow-lg hover:cursor-pointer active:scale-95 hover:scale-95 transition-all duration-300 ';
     const variants = {
         primary: "bg-[#4CAF4F] text-white",
         secondary: "bg-transparent text-[#4CAF4F] border-1 border-[#4CAF4F]"
