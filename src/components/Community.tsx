@@ -76,7 +76,7 @@ export default function Community() {
       </figure>
 
       
-      <h1 className="mx-auto text-center font-medium text-4xl md:text-5xl mt-35 mb-5 w-[90%] md:w-[60%] font-bitcount">
+      <h1 className="mx-auto text-center font-medium text-4xl lg:text-5xl mt-35 mb-5 w-[90%] lg:w-[60%] font-bitcount">
         Take the hassle out of membership management today.
       </h1>
 

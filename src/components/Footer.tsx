@@ -9,7 +9,7 @@ export default function Footer() {
   const date: number = new Date().getFullYear();
   return (
     <footer className="bg-black/95 mt-20 py-15 px-5 md:px-10 text-white">
-      <section className="flex flex-col md:flex-row items-start justify-between gap-10 md:gap-0">
+      <section className="flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-0">
         
         <div>
           <div className="flex items-center">
@@ -21,18 +21,17 @@ export default function Footer() {
             <p className="font-extrabold text-3xl">Nexcent</p>
           </div>
 
-          <p className="w-[90%] md:w-[65%] py-7 leading-7 text-[#F5F7FA]">
+          <p className="w-[90%] lg:w-[65%] py-7 leading-7 text-[#F5F7FA]">
             Copyright &copy; {date} Nexcent ltd. All rights reserved
           </p>
 
           <figure className="flex items-center gap-5">
-            <FaInstagram className="w-6 h-6 md:w-10 md:h-10 p-1.5 bg-gray-500/40 rounded-full hover:scale-95 hover:cursor-pointer transition overflow-visible" />
-            <FaXTwitter className="w-6 h-6 md:w-10 md:h-10 p-1.5 bg-gray-500/40 rounded-full hover:scale-95 hover:cursor-pointer transition overflow-visible" />
-            <FaYoutube className="w-6 h-6 md:w-10 md:h-10 p-1.5 bg-gray-500/40 rounded-full hover:scale-95 hover:cursor-pointer transition overflow-visible" />
-            <FaLinkedin className="w-6 h-6 md:w-10 md:h-10 p-2 bg-gray-500/40 rounded-full hover:scale-95 hover:cursor-pointer transition overflow-visible" />
+            <FaInstagram className="w-6 h-6 lg:w-10 lg:h-10 p-1.5 bg-gray-500/40 rounded-full hover:scale-95 hover:cursor-pointer transition overflow-visible" />
+            <FaXTwitter className="w-6 h-6 lg:w-10 lg:h-10 p-1.5 bg-gray-500/40 rounded-full hover:scale-95 hover:cursor-pointer transition overflow-visible" />
+            <FaYoutube className="w-6 h-6 lg:w-10 lg:h-10 p-1.5 bg-gray-500/40 rounded-full hover:scale-95 hover:cursor-pointer transition overflow-visible" />
+            <FaLinkedin className="w-6 h-6 lg:w-10 lg:h-10 p-2 bg-gray-500/40 rounded-full hover:scale-95 hover:cursor-pointer transition overflow-visible" />
           </figure>
         </div>
-
 
         <div className="flex gap-14">
           <article>

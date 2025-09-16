@@ -18,7 +18,7 @@ export default function Navbar() {
           <p className="font-extrabold text-2xl">Nexcent</p>
         </figure>
 
-        <div className="hidden md:flex items-center justify-between gap-7 backdrop-blur-xs p-4 rounded-full overflow-hidden">
+        <div className="hidden lg:flex items-center justify-between gap-7 backdrop-blur-xs p-4 rounded-full overflow-hidden">
           <p>Home</p>
           <p>Service</p>
           <p>Feature</p>
@@ -27,14 +27,14 @@ export default function Navbar() {
           <p>FAQ</p>
         </div>
 
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden lg:flex items-center gap-5">
           <Button variant="secondary" className="backdrop-blur-xs">
             Login
           </Button>
           <Button variant="primary">Sign up</Button>
         </div>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="transition-transform duration-300">
             {isOpen ? (
               <FaTimes size={24} className="transform rotate-180 transition-transform duration-300 hover:cursor-pointer hover:scale-95 transiton" />
@@ -46,7 +46,7 @@ export default function Navbar() {
       </section>
 
       <div
-        className={`md:hidden transition-all duration-500 ease-in-out ${
+        className={`lg:hidden transition-all duration-500 ease-in-out ${
           isOpen ? "flex flex-col items-center gap-6 py-6 bg-[#F5F7FA] opacity-100 max-h-[500px]" : "opacity-0 max-h-0 overflow-hidden"
         }`}
       >
