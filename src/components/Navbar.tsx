@@ -7,13 +7,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="pr-10 py-4 md:pr-20 md:py-6 fixed top-0 w-screen z-50 bg-[#F5F7FA]">
+    <nav className="pr-10 py-4 md:pr-20 md:py-6 fixed top-0 w-screen z-50 bg-transparent">
       <section className="flex justify-between items-center">
-        <figure className="flex items-center">
+        <figure className="flex items-center backdrop-blur-xs rounded-lg p-1">
           <img
             src={logo}
             alt="logo"
-            className="w-[90%] backdrop-blur-xs rounded-lg p-1"
+            className="w-[90%]"
           />
           <p className="font-extrabold text-2xl">Nexcent</p>
         </figure>
@@ -34,7 +34,7 @@ export default function Navbar() {
           <Button variant="primary">Sign up</Button>
         </div>
 
-        <div className="lg:hidden">
+        <div className="lg:hidden backdrop-blur-xs rounded-lg p-1">
           <button onClick={() => setIsOpen(!isOpen)} className="transition-transform duration-300">
             {isOpen ? (
               <FaTimes size={24} className="transform rotate-180 transition-transform duration-300 hover:cursor-pointer hover:scale-95 transiton" />
