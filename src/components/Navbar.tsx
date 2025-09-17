@@ -46,8 +46,8 @@ export default function Navbar() {
       </section>
 
       <div
-        className={`lg:hidden transition-all duration-500 ease-in-out ${
-          isOpen ? "flex flex-col items-center gap-6 py-6 bg-[#F5F7FA] opacity-100 max-h-[500px]" : "opacity-0 max-h-0 overflow-hidden"
+        className={`lg:hidden flex flex-col items-center gap-6 py-6 transition-all duration-500 ease-in-out origin-top ${
+          isOpen ? "shadow-sm rounded-xl bg-[#F5F7FA] opacity-100 scale-y-100" : "opacity-0 scale-y-0 overflow-hidden"
         }`}
       >
         <p>Home</p>
